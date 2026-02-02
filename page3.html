@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts"></div>
+
+    <div class="card zoom-in">
+        <h1>❤️ Final Question ❤️</h1>
+        <p>Will you be my Valentine?</p>
+
+        <button class="yes-btn" onclick="yesClicked()">Yes</button>
+        <button class="no-btn" onclick="noClicked()">No</button>
+
+        <p id="message" class="message"></p>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-background-112191.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        document.body.addEventListener('click', function () {
+            document.getElementById("bgMusic").play();
+        }, { once: true });
+
+        function yesClicked() {
+            document.getElementById("message").innerText = "Yayyy! ❤️ See you on Valentine’s Day!";
+
+            confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+        }
+
+        function noClicked() {
+            document.getElementById("message").innerText = "❌ Wrong answer! Try again 😜";
+        }
+    </script>
+
+</body>
+</html>
