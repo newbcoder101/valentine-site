@@ -31,6 +31,7 @@
     <div class="heart">❤️</div>
     <div class="heart">❤️</div>
     <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
 
     <div class="card zoom-in">
         <h1>❤️ Final Question ❤️</h1>
@@ -69,6 +70,9 @@
 
         function noClicked() {
             document.getElementById("message").innerText = "❌ Wrong answer! Try again 😜";
+
+            // change the question GIF to the playful 'no' GIF
+            document.querySelector('.question-gif').src = 'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OTM3ZGx5b2djNTUzejViaDNzMXdzNWR1NG4yMGlpaHl3YTE5MmJoayZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/kiTd2pnh2gZIBJHVOv/giphy.gif';
         }
     </script>
 
