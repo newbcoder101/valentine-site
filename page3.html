@@ -6,11 +6,36 @@
 </head>
 <body>
 
-    <div class="hearts"></div>
+
+    <div class="hearts-right"></div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
 
     <div class="card zoom-in">
         <h1>❤️ Final Question ❤️</h1>
-        <p>Will you be my Valentine?</p>
+        <img class="question-gif" src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHJ2ajk3Z21zYXBrNm81NnkzemZsdmtuMXQ5dWswN3h0MGhkaWlpdSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/r0OsgIGMS13aDGzrap/giphy.gif" alt="Question GIF" style="width:100%;max-width:300px;display:block;margin:0 auto 16px;" />
+        <p>Bhagyashri,Will you be my Valentine?</p>
 
         <button class="yes-btn" onclick="yesClicked()">Yes</button>
         <button class="no-btn" onclick="noClicked()">No</button>
@@ -31,6 +56,9 @@
 
         function yesClicked() {
             document.getElementById("message").innerText = "Yayyy! ❤️ See you on Valentine’s Day!";
+
+            // change the question GIF to the celebration GIF
+            document.querySelector('.question-gif').src = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmJyMzlheTQ2eGxmNTBlY3JvcmtxZXcwOTNvbjl3Z3JzenJxc2M0dSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NxC8VtyxqhMtpLoEEN/giphy.gif';
 
             confetti({
                 particleCount: 200,
